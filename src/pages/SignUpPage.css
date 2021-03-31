@@ -1,0 +1,24 @@
+.signUpPageContainer {
+    padding: 100px;
+}
+
+.SignUpForm {
+    display: grid;
+    grid-template-columns: auto;
+    margin: auto;
+    width: 30vw;
+}
+
+.signUpPageHeading {
+    text-align: center;
+}   
+
+.signUpButtonInput {
+    margin-top: 10px;
+    background-color: #212529;
+    color: white;
+}
+
+.signUpLoginRoute {
+    text-align: center;
+}

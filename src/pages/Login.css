@@ -1,0 +1,28 @@
+.logInPageContainer {
+    padding: 100px;
+}
+
+.logInForm {
+    display: grid;
+    grid-template-columns: auto;
+    margin: auto;
+    width: 30vw;
+}
+
+.logInPageHeading {
+    text-align: center;
+}   
+
+.logInButtonInput {
+    margin-top: 10px;
+    background-color: #212529;
+    color: white;
+}
+
+.LoginSignUpRoute {
+    text-align: center;
+}
+
+.loginForgotPassword {
+    text-align: center;
+}
