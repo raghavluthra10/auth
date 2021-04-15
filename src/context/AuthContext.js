@@ -34,6 +34,10 @@ export const AuthProvider = (props) => {
         return currentUser.updatePassword(password)
     };
 
+    const updateSomething = () => {
+        
+    }
+
     useEffect(() => {
         const unsubscribe = auth.onAuthStateChanged(user => {
             setCurrentUser(user);
@@ -54,7 +58,8 @@ export const AuthProvider = (props) => {
         logout, 
         resetPassword,
         updateEmail,
-        updatePassword
+        updatePassword,
+        updateSomething
     };
 
     return (

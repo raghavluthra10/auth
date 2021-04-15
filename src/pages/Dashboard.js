@@ -8,7 +8,7 @@ const Dashboard = () => {
 
     const [ error, setError ] = useState('');
 
-    const { currentUser, logout } = useContext(AuthContext);
+    const { currentUser, logout, updateSomething } = useContext(AuthContext);
 
     const history = useHistory();
 
@@ -27,8 +27,9 @@ const Dashboard = () => {
         console.log(error)
     }
 
-    const updateProfile = (e) => {
-
+    const enterTodb = async(e) => {
+        e.preventDefault();
+        await updateSomething();
     }
 
 
@@ -38,6 +39,13 @@ const Dashboard = () => {
             <h1> Email: {currentUser.email} </h1>
             <button variant='link' onClick={handleLogout} > LOG OUT </button>
             <button> <Link to='/update-profile'> Update Profile </Link> </button>
+
+            <br />
+            <form onSubmit={enterTodb} >
+                <input type='text' placeholder='write something' style={{ width: "500px"}} />
+                <input type='submit' value='submit' />
+            </form>
+            
         </div>
     )
 }
